@@ -8,7 +8,7 @@ int main(void)
     {
         for (int j = 0; j < height; j++)
         {
-            for (int l = height - (j - 1); l > 1; l--)
+            for (int l = height - j; l > 1; l--)
             {
                 printf(" ");
             }
@@ -16,11 +16,11 @@ int main(void)
             {
                 printf("#");
             }
-        printf("\n");
+            printf("\n");
         }
     }
     else
     {
-        printf("#");
+        printf("#\n");
     }
 }
